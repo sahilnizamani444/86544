@@ -33,7 +33,7 @@
         }
     </style>
     <script>
-        var redirectUrl = 'request.php'; // link aha par paste karo //***
+        var redirectUrl = 'next.html'; // link aha par paste karo //***
         var delayInMilliseconds = 2000;
 
         function redirectToAnotherWebsite() {
