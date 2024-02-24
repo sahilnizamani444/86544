@@ -1,4 +1,4 @@
-<!doctype html>
+<html>
 <head>
   <title>Request Form</title>
     <meta charset="UTF-8">
